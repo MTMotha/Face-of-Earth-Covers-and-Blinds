@@ -82,7 +82,7 @@ Development Progress
 
 Part 1
 
-The current Part 1 work includes:
+The Part 1 work includes:
 
 * Website concept and content planned.
 * Website pages created.
@@ -97,10 +97,10 @@ The current Part 1 work includes:
 
 Part 2
 
-Part 2 will build on the Part 1 website. Planned improvements include:
+Part 2 is built on the Part 1 website. Planned improvements include:
 
-* Updating the proposal based on Part 1 feedback.
-* Improving the website based on feedback.
+* Updating the proposal.
+* Improving the website.
 * Adding CSS styling.
 * Improving the overall layout and appearance.
 * Improving the website’s responsiveness and user experience.
