@@ -1,8 +1,8 @@
-ShadeCraft Covers & Blinds Website
+Face of Earth Covers & Blinds Website
 
 About the Project
 
-This project is a website being developed for ShadeCraft Covers & Blinds as part of my Web Development project.
+This project is a website being developed for Face of Earth Covers & Blinds as part of my Web Development project.
 
 The main purpose of the website is to give potential customers a simple way to learn more about the business, view the products and services offered, make an enquiry and find the company’s contact information.
 
@@ -12,7 +12,7 @@ Website Pages
 
 The website currently contains the following pages:
 
-* Home (index.html) – Introduces ShadeCraft Covers & Blinds and gives visitors an overview of the business.
+* Home (index.html) – Introduces Face of Earth Covers & Blinds and gives visitors an overview of the business.
 * About (about.html) – Provides information about the business, its purpose and values.
 * Products (products.html) – Displays the products and solutions offered by the business.
 * Inquiry (inquiry.html) – Allows visitors to provide their details and submit a product or service enquiry.
@@ -20,7 +20,7 @@ The website currently contains the following pages:
 
 Project Structure
 
-ShadeCraft/
+Face of Earth/
 │
 ├── index.html
 ├── about.html
@@ -41,7 +41,7 @@ ShadeCraft/
 Folder and File Descriptions
 
 * index.html – The homepage of the website.
-* about.html – Information about ShadeCraft Covers & Blinds.
+* about.html – Information about Face of Earth Covers & Blinds.
 * products.html – Information about the products and services.
 * inquiry.html – Customer enquiry form.
 * contact.html – Contact information and business hours.
