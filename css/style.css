@@ -1,0 +1,534 @@
+/* 1. CSS RESET AND BASE STYLES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #302F28;
+    background-color: #F7F2E8;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+
+/* 2. TYPOGRAPHY */
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.25;
+    color: #244532;
+}
+
+h1 {
+    font-size: clamp(1.7rem, 3vw, 2.3rem);
+}
+
+h2 {
+    margin-bottom: 1rem;
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+}
+
+h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1.3rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+
+/* 3. HEADER AND NAVIGATION */
+
+header {
+    background-color: #FFFFFF;
+    border-bottom: 0.25rem solid #C96F35;
+    box-shadow: 0 0.2rem 0.7rem rgb(36 69 50 / 8%);
+}
+
+nav {
+    width: min(92%, 75rem);
+    margin: 0 auto;
+    padding: 1.1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo h1 {
+    color: #244532;
+    font-size: 1.8rem;
+    letter-spacing: 0.02em;
+}
+
+.logo p {
+    margin-bottom: 0;
+    color: #C96F35;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.4rem;
+    list-style: none;
+}
+
+.nav-links a {
+    display: inline-block;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid transparent;
+    color: #244532;
+    font-weight: 700;
+    transition: color 0.2s ease,
+                border-color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+    color: #C96F35;
+    border-bottom-color: #C96F35;
+}
+
+
+/* 4. MAIN PAGE LAYOUT */
+
+main {
+    width: min(92%, 75rem);
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+
+/* 5. HOMEPAGE HERO SECTION */
+
+.hero {
+    min-height: 27rem;
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #E8D7B9,
+        #F7F2E8 55%,
+        #D9C5A5
+    );
+    border-left: 0.4rem solid #C96F35;
+    border-radius: 0.5rem;
+}
+
+.hero-content {
+    max-width: 52rem;
+}
+
+.hero h2 {
+    margin-bottom: 1.25rem;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    color: #244532;
+}
+
+.hero p {
+    margin-bottom: 1.8rem;
+    color: #49453B;
+    font-size: clamp(1rem, 1.8vw, 1.2rem);
+}
+
+
+/* 6. BUTTONS AND INTERACTIVE ELEMENTS */
+
+.button {
+    display: inline-block;
+    padding: 0.85rem 1.6rem;
+    border: 2px solid #C96F35;
+    border-radius: 0.3rem;
+    background-color: #C96F35;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-align: center;
+    transition: background-color 0.2s ease,
+                border-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+.button:hover,
+.button:focus-visible {
+    background-color: #244532;
+    border-color: #244532;
+    color: #FFFFFF;
+}
+
+.button:active {
+    transform: translateY(1px);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 3px solid #C96F35;
+    outline-offset: 3px;
+}
+
+
+/* 7. INTRODUCTION SECTION */
+
+.intro {
+    max-width: 58rem;
+    margin: 0 auto 3rem;
+    padding: 1.5rem 0;
+}
+
+.intro h2 {
+    padding-bottom: 0.6rem;
+    border-bottom: 2px solid #D9C5A5;
+}
+
+.intro p {
+    color: #49453B;
+}
+
+
+/* 8. FEATURE CARDS */
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.feature-card {
+    padding: 1.8rem;
+    background-color: #FFFFFF;
+    border: 1px solid #D9C5A5;
+    border-top: 0.3rem solid #244532;
+    border-radius: 0.4rem;
+    box-shadow: 0 0.25rem 0.8rem rgb(48 47 40 / 7%);
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0.5rem 1.2rem rgb(48 47 40 / 13%);
+}
+
+.feature-card h3 {
+    color: #244532;
+}
+
+.feature-card p {
+    margin-bottom: 0;
+    color: #49453B;
+}
+
+
+/* 9. GENERAL CONTENT AND PRODUCT LAYOUTS */
+
+article,
+.card,
+.product-card,
+.about-content,
+.contact-content,
+.inquiry-content {
+    padding: 1.5rem;
+    background-color: #FFFFFF;
+    border: 1px solid #D9C5A5;
+    border-radius: 0.4rem;
+}
+
+.products,
+.product-list,
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+article img,
+.card img,
+.product-card img {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+    object-fit: cover;
+}
+
+
+/* 10. FORMS */
+
+form {
+    width: 100%;
+    max-width: 45rem;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.4rem;
+    color: #244532;
+    font-weight: 700;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    margin-bottom: 1.2rem;
+    padding: 0.8rem;
+    border: 1px solid #B9AD98;
+    border-radius: 0.3rem;
+    background-color: #FFFFFF;
+    color: #302F28;
+}
+
+textarea {
+    min-height: 9rem;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #244532;
+}
+
+
+/* 11. FOOTER */
+
+footer {
+    padding: 1.6rem 4%;
+    background-color: #244532;
+    border-top: 0.3rem solid #C96F35;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+
+/* 12. TABLET RESPONSIVE STYLES */
+
+@media (max-width: 56rem) {
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 0.4rem 1rem;
+    }
+
+    .features,
+    .products,
+    .product-list,
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hero {
+        min-height: 23rem;
+    }
+}
+
+
+/* 13. MOBILE RESPONSIVE STYLES */
+
+@media (max-width: 40rem) {
+    body {
+        font-size: 0.95rem;
+    }
+
+    nav {
+        width: 94%;
+        padding: 1rem 0;
+    }
+
+    .logo h1 {
+        font-size: 1.6rem;
+    }
+
+    .nav-links {
+        width: 100%;
+        gap: 0.25rem 0.8rem;
+    }
+
+    .nav-links a {
+        padding: 0.35rem 0;
+        font-size: 0.88rem;
+    }
+
+    main {
+        width: 94%;
+        padding: 1.25rem 0;
+    }
+
+    section {
+        margin-bottom: 2rem;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 3rem 1.2rem;
+        border-left-width: 0.25rem;
+    }
+
+    .hero h2 {
+        font-size: 1.9rem;
+    }
+
+    .intro {
+        padding: 0.5rem 0;
+    }
+
+    .features,
+    .products,
+    .product-list,
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-card,
+    article,
+    .card,
+    .product-card {
+        padding: 1.25rem;
+    }
+
+    .button {
+        max-width: 100%;
+        padding: 0.8rem 1.2rem;
+    }
+
+    footer {
+        padding: 1.25rem 5%;
+    }
+}
+/* Before-and-after gallery */
+.gallery-section {
+    padding: 3rem 5%;
+    background-color: #F7F2E8;
+    text-align: center;
+}
+
+.gallery-section > p {
+    max-width: 42rem;
+    margin: 0 auto 2rem;
+    line-height: 1.7;
+}
+
+.before-after-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    max-width: 72rem;
+    margin: 0 auto;
+}
+
+.gallery-card {
+    min-width: 0;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.25rem 0.8rem rgb(0 0 0 / 10%);
+    text-align: left;
+}
+
+.gallery-card > h3 {
+    margin: 1.2rem;
+    color: #244532;
+}
+
+.comparison-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
+    padding: 0 1rem 1rem;
+}
+
+.comparison-grid figure {
+    min-width: 0;
+    margin: 0;
+}
+
+.comparison-grid img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 0.4rem;
+}
+
+.comparison-grid figcaption {
+    padding-top: 0.5rem;
+    color: #244532;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Product images */
+.product-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+/* Responsive layout */
+@media (max-width: 40rem) {
+    .before-after-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-section {
+        padding: 2rem 1rem;
+    }
+}
