@@ -153,6 +153,40 @@ Part 2	Added product photographs and before-and-after galleries.
 Part 2	Applied responsive layout rules and media queries, then tested the layout by resizing the browser.
 Part 2	Updated the README to document the improvements and provide spaces for testing screenshots.
 
+Part 3 – JavaScript Functionality, SEO and Deployment (1 November 2026)
+
+The website was further improved by adding JavaScript functionality and preparing it for deployment.
+
+JavaScript and functionality
+
+* Added a product search feature to help visitors find products.
+* Added an image lightbox to allow visitors to view images more clearly.
+* Added client-side form validation for the inquiry and contact forms.
+* Added an AJAX submission process using Netlify Forms.
+* Added a confirmation page to inform visitors after submitting a form.
+* Added interactive FAQ accordion functionality.
+
+Search Engine Optimisation (SEO)
+
+* Reviewed page titles and meta descriptions.
+* Reviewed page headings and image alternative text.
+* Added a robots.txt file to provide crawling instructions to search engines.
+* Added a sitemap.xml file listing the website’s main pages.
+* Included relevant search terms in the website content.
+
+Deployment and testing
+
+* Deployed the website using Netlify.
+* Connected the Netlify project to the GitHub repository.
+* Enabled Netlify form detection.
+* Tested the inquiry and contact forms using test submissions.
+* Confirmed that both forms were detected and that test submissions were recorded in Netlify.
+* Updated the sitemap and robots file to use the Netlify website address.
+
+Live website: https://faceofearth.netlify.app/
+
+Note: The website was tested using a desktop browser. Further testing can be performed on different devices and browsers.
+
 Learning Resources
 
 The following resources support my learning and development of the website.
