@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mtmotha.github.io/Face-of-Earth-Covers-and-Blinds/sitemap.xml
+Sitemap: https://faceofearth.netlify.app/sitemap.xml

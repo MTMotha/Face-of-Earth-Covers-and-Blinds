@@ -1,24 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-    <url>
-        <loc>https://mtmotha.github.io/Face-of-Earth-Covers-and-Blinds/</loc>
-    </url>
-
-    <url>
-        <loc>https://mtmotha.github.io/Face-of-Earth-Covers-and-Blinds/about.html</loc>
-    </url>
-
-    <url>
-        <loc>https://mtmotha.github.io/Face-of-Earth-Covers-and-Blinds/products.html</loc>
-    </url>
-
-    <url>
-        <loc>https://mtmotha.github.io/Face-of-Earth-Covers-and-Blinds/inquiry.html</loc>
-    </url>
-
-    <url>
-        <loc>https://mtmotha.github.io/Face-of-Earth-Covers-and-Blinds/contact.html</loc>
-    </url>
-
+    <url><loc>https://faceofearth.netlify.app/</loc></url>
+    <url><loc>https://faceofearth.netlify.app/about.html</loc></url>
+    <url><loc>https://faceofearth.netlify.app/products.html</loc></url>
+    <url><loc>https://faceofearth.netlify.app/inquiry.html</loc></url>
+    <url><loc>https://faceofearth.netlify.app/contact.html</loc></url>
 </urlset>
