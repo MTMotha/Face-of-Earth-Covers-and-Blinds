@@ -150,11 +150,20 @@ document.addEventListener("DOMContentLoaded", function () {
                 'button[type="submit"]'
             );
 
-            if (!form.hasAttribute("data-netlify")) {
-                statusMessage.textContent =
-                    "This form is not connected to a submission service.";
-                return;
-            }
+           const formName = form.getAttribute("name");
+const formNameInput = form.querySelector(
+    'input[name="form-name"]'
+);
+
+if (
+    !formName ||
+    !formNameInput ||
+    formNameInput.value !== formName
+) {
+    statusMessage.textContent =
+        "This form is not properly configured.";
+    return;
+}
 
             // Prevent multiple submissions.
             if (submitButton) {
